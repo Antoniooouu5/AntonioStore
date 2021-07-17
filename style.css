@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #83b7c9;
+    height: 100%;
+}
+.center{
+    max-width: 1280px;
+    margin: 0px auto;
+}
+header{
+    background-color: #2094B9;
+    height: 80px;
+}
+header .center img{
+    display: block;
+    margin: 0 auto;
+}
+header .img-header{
+    width: 80px;
+    height: 50px;
+    position: absolute;
+    top:-16px;
+    right: 0px;
+}
+.none{
+    display: none;
+}
+.ad{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    background-color: rgba(0,0,0,.4);
+    display: none ;
+}
+h1{
+    text-align: center;
+    padding-left: 17px;
+}
+.modal{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 400px;
+    width: 95%;
+    max-width: 500px;
+    background-color: #2094b9;
+  
+}
+.ad h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 42px;
+}
+.modal input{
+    font-size: 17px;
+}
+span{
+    cursor: pointer;
+    position: absolute;
+    top: 6px;
+    right: 12px;   
+    font-size: 22px;
+}
+input{
+    display: block;
+    width: 80%;
+    margin: 4px auto;
+    height: 35px;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+img{
+    margin-top: 30px;
+    align-items: center;
+}
+.img , .img-2{
+    margin-right: 20px;
+}
+@media screen and (max-width: 700px){
+   section{ flex-direction: column;}
+   img{
+       display: block;
+       margin:  15px auto;
+      
+   }
+}
+.img-4 , .img-5{
+    margin-right: 20px;
+}
+nav {
+    font-size: 20px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 1%;
+}
+nav a{
+    text-align: center;
+    height: 30px;
+    width: 80px;
+    margin-top: 4px;
+    border-radius: 7px;
+    background-color: rgb(21, 92, 197);
+    border: 1px solid black;
+    z-index: 5;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color:  black;
+}
