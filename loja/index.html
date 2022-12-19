@@ -1,0 +1,68 @@
+<html lang="pt-br">
+<head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">      
+    <meta charset ="UTF-8">
+    <title>AntonioouStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="center">
+            <img src="assets/logo.png">
+        </div>
+        <img class="img-header" src="assets/down.svg" id="img" onclick="Clicar()">
+        <img class="img-header none" src="assets/up.svg" id="img-2" onclick="Reset()">
+        <nav class="nav">
+            <a href="index.html">Menu</a>
+            <a href="#">Carrinho</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+    <div class="ad">
+        <div class="modal">
+            <h1>Faça seu Login !  <span onclick="reset()">X</span></h1>
+            <br><br>
+            <input type="text" placeholder="Coloque seu nome" id="text" maxlength="30" required>
+            <input type="text" placeholder="Coloque sua senha" required>
+            <input type="submit" onclick="reset()" value="Finalizar!">
+        </div>
+    </div>
+    <main>
+    <section class="container">
+        <div  class="img"><a href="tenispreto.html"><img src="./assets/Tenis.png"></a></div>
+        <div class="img-2"><a href="tenisbranco.html"><img src="./assets/Tenis2.png"></a></div>
+        <div class="img-3"><a href="tenispreto.html"><img src="./assets/Tenis.png"></a></div>
+    </section>
+    <section class="container-2">
+        <div class="img-4"><a href="tenisbranco.html"><img src="./assets/Tenis2.png"></a></div>
+        <div class="img-5"><a href="tenispreto.html"><img src="./assets/Tenis.png"></a></div>
+        <div class="img-6"><a href="tenisbranco.html"><img src="./assets/Tenis2.png"></a></div>
+    </section>
+    </main>
+<script>
+      var modal = document.querySelector('.ad')
+        window.onload = function(){        
+            modal.style.display ="block"
+        }
+        function reset(){
+            modal.style.display = "none";
+        }    
+        var menu = document.querySelector('.nav')
+        var img2 = document.querySelector('#img-2')
+        var reseT = document.querySelector('#img')
+        function Clicar(){
+            menu.style.display = "flex";           
+            reseT.style.display = "none"
+            img2.style.display = "block"
+        }
+        function Reset(){
+            if(menu.style.display = "flex"){
+                reseT.style.display = "block"
+                img2.style.display = "none"
+                menu.style.display = "none"
+            }
+        }
+</script>  
+</body>
+</html>
